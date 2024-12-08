@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2021",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "esModuleInterop": true,
+    "paths": {
+      "@app/router": [
+        "libs/router/src"
+      ],
+      "@app/router/*": [
+        "libs/router/src/*"
+      ],
+      "@app/skills": [
+        "libs/skills/src"
+      ],
+      "@app/skills/*": [
+        "libs/skills/src/*"
+      ],
+      "@app/openai": [
+        "libs/openai/src"
+      ],
+      "@app/openai/*": [
+        "libs/openai/src/*"
+      ]
+    }
+  }
+}

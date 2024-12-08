@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true
+  },
+  "projects": {
+    "router": {
+      "type": "library",
+      "root": "libs/router",
+      "entryFile": "index",
+      "sourceRoot": "libs/router/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/router/tsconfig.lib.json"
+      }
+    },
+    "skills": {
+      "type": "library",
+      "root": "libs/skills",
+      "entryFile": "index",
+      "sourceRoot": "libs/skills/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/skills/tsconfig.lib.json"
+      }
+    },
+    "openai": {
+      "type": "library",
+      "root": "libs/openai",
+      "entryFile": "index",
+      "sourceRoot": "libs/openai/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/openai/tsconfig.lib.json"
+      }
+    }
+  }
+}

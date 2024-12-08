@@ -1,0 +1,18 @@
+name: nest
+
+services:
+  api:
+    container_name: api
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+      target: development
+    env_file:
+      - .env
+    environment:
+      PORT: 3000
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./src:/usr/src/app/apps
+      - ./libs:/usr/src/app/libs
